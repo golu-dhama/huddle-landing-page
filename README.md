@@ -19,7 +19,7 @@
 
 ## 🚀 Live Demo
 
-[Add your deployed link here – Netlify / Vercel]
+[https://golu-dhama.github.io/huddle-landing-page/]
 
 ## 📱 Responsive breakpoints
 
