@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=registration-1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>Huddle Landing</title>
+  <title>Huddle Landing Page | Frontend Mentor Challenge</title>
+  <script defer src="demo.js?v=registration-1"></script>
 </head>
 <body>
 
@@ -27,15 +28,16 @@
 
       <!-- RIGHT: CONTENT -->
       <div class="hero-content">
-        <h2 class="hero-title">
+        <p class="challenge-label">Frontend Mentor UI challenge</p>
+        <h1 class="hero-title">
           Build The Community Your Fans Will Love
-        </h2>
+        </h1>
 
         <p class="hero-text">
           Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
         </p>
 
-        <button class="hero-button">
+        <button type="button" class="hero-button" id="register" aria-haspopup="dialog" aria-controls="register-demo" disabled>
           Register
         </button>
       </div>
@@ -49,5 +51,18 @@
 </div>
   </section>
 
+  <dialog class="register-dialog" id="register-demo" aria-labelledby="register-title" aria-describedby="register-help">
+    <div class="register-heading">
+      <h2 id="register-title">Try demo registration</h2>
+      <button type="button" class="dialog-close" aria-label="Close registration">×</button>
+    </div>
+    <p id="register-help">Use a sample email to try the form. This demo runs in your browser.</p>
+    <form id="register-form" method="dialog">
+      <label for="sample-email">Sample email</label>
+      <input id="sample-email" type="email" placeholder="you@example.com" required autofocus>
+      <button type="submit">Try registration</button>
+    </form>
+    <p class="registration-status" role="status"></p>
+  </dialog>
 </body>
 </html>

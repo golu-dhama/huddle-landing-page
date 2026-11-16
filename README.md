@@ -1,6 +1,6 @@
 # Huddle Landing Page
 
-> Responsive landing page – mobile-first, pure HTML/CSS.
+> Mobile-first Frontend Mentor UI challenge built with HTML, CSS, and vanilla JavaScript.
 
 ## 📸 Preview
 
@@ -12,14 +12,16 @@
 
 - HTML5
 - CSS3 (Flexbox, Grid, Media Queries)
-- No frameworks, no libraries
+- Vanilla JavaScript for the registration demo
 
 *** 
 
 
 ## 🚀 Live Demo
 
-[https://golu-dhama.github.io/huddle-landing-page/]
+[Open Huddle Landing Page](https://golu-dhama.github.io/huddle-landing-page/)
+
+Select **Register** and enter a sample email to test the in-browser form.
 
 ## 📱 Responsive breakpoints
 

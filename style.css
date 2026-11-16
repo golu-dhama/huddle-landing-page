@@ -147,3 +147,86 @@ body {
     gap: 1rem;
   }
 }
+
+.challenge-label {
+  margin-bottom: 0.75rem;
+  color: #fff;
+  font: 600 0.875rem/1.4 system-ui, sans-serif;
+}
+
+.register-dialog {
+  width: min(30rem, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  padding: clamp(1rem, 5vw, 2rem);
+  overflow: auto;
+  border: 0;
+  border-radius: 1rem;
+  background: #fff;
+  color: #241941;
+  font: 1rem/1.5 system-ui, sans-serif;
+}
+
+.register-dialog::backdrop {
+  background: rgb(24 14 48 / 68%);
+}
+
+.register-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-heading h2 {
+  font-size: 1.25rem;
+}
+
+.register-dialog button,
+.register-dialog input {
+  min-height: 44px;
+  font: inherit;
+}
+
+.dialog-close {
+  flex: 0 0 44px;
+  border: 0;
+  border-radius: 50%;
+  background: #f2edf9;
+  color: #241941;
+  cursor: pointer;
+}
+
+#register-form {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#sample-email {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #756687;
+  border-radius: 0.5rem;
+}
+
+#register-form button {
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: #543595;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-button:focus-visible,
+.register-dialog :focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.registration-status:not(:empty) {
+  margin-top: 0.75rem;
+  color: #20593b;
+}
